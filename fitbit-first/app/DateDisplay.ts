@@ -13,7 +13,7 @@ export class DateDisplay {
         if (!this.dateCallback)
             return;
         const currDate = new Date();
-        const day = currDate.getDay();
+        const day = currDate.getDate();
         const month = currDate.getMonth();
         const date = `${this.months[month]} ${day}`;
         this.dateCallback(date);
